@@ -15,7 +15,7 @@ body {
     padding: 50px;
     /*chèn hình*/
     /* Đường dẫn đến hình ảnh */
-    background-image: url("img/surreal-scenery-ai-3840x2160-18778.jpeg"); 
+    background-image: url("img/3607424.jpg"); 
 
     /* Giữ hình ảnh cố định, không bị trôi khi cuộn trang */
     background-attachment: fixed;
@@ -34,7 +34,7 @@ body {
 
 form {
     background: white;
-    padding: 30px;
+    padding: 30px;  
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     line-height: 2; /* Giúp các dòng không bị dính nhau */
@@ -43,6 +43,10 @@ form {
     width: 90%;            /* Chiều rộng co giãn theo màn hình */
     max-width: 500px;      /* Giới hạn độ rộng tối đa để không quá to */
     margin: 0 auto;        /* QUAN TRỌNG: Căn giữa khối form ra giữa trang */
+    /* Dùng rgba để tạo độ trong suốt cho màu nền trắng */
+    background: rgba(255, 255, 255, 0.85); 
+    backdrop-filter: blur(10px); /* Hiệu ứng kính mờ (nếu trình duyệt hỗ trợ) */
+    /* Các thuộc tính cũ giữ nguyên */
    
 }
 
@@ -51,7 +55,6 @@ h1 {
     color: #cccccc;
     text-align: center;
     margin-bottom: 25px;
-    
     padding-bottom: 10px;
     font-size: 100px;
 }
@@ -95,11 +98,6 @@ input[type="submit"]:hover, input[type="button"]:hover {
     filter: brightness(90%);
 }
 
-/* Chỉnh màu khi bôi đen (theo ý bạn thích) */
-::selection {
-    background: #3498db;
-    color: white;
-}
 
 /* Chỉnh khoảng cách cho Radio và Checkbox */
 input[type="radio"], input[type="checkbox"] {
