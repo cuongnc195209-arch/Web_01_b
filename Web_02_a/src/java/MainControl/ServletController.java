@@ -34,16 +34,44 @@ public class ServletController extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet ServletController</title>");            
+            out.println("<title>Servlet ServletController</title>");
             out.println("</head>");
             out.println("<body>");
-            String aA= request.getParameter("aA");
-            String bB= request.getParameter("bB");
-            double a= Double.parseDouble(aA);
-            double b= Double.parseDouble(bB);
+            boolean checkEr = false;
+            String aA = request.getParameter("aA");
+            String bB = request.getParameter("bB");
+            String op = request.getParameter("op");
+            double result = 0;
+            double a = 0;
+            double b = 0;
+            try {
+                a = Double.parseDouble(aA);
+                b = Double.parseDouble(bB);
+                switch (op) {
+                    case "+":
+                        result= a+b;
+                        break;
+                    case "-":
+                        result= a-b;
+                        break;
+                    case "*":
+                        result= a*b;
+                        break;
+                    case "/":
+                        result=a/b;
+                        break;
+
+                    default:
+                        result=0;
+                }
+            } catch (Exception e) {
+                checkEr=true;
+            }
             
-            out.println(a+"+"+b+"="+(a+b));
-            
+            if(!checkEr)
+                out.println(a+op+b+"="+ result);
+            else
+                out.println("Error value");
             
             out.println("</body>");
             out.println("</html>");

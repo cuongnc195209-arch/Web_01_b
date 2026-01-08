@@ -13,8 +13,14 @@
     </head>
     <body>
         <form action="ServletController" method="get">
-            a: <input type="text" name="aA"><br>
-            b: <input type="text" name="bB"><br>
+            a: <input type="text" name="aA"/><br/>
+            b: <input type="text" name="bB"/><br/>
+            choice:<select name="op">
+                       <option value="+">+</option>
+                       <option value="-">-</option>
+                       <option value="*">*</option>
+                       <option value="/">/</option>
+            </select>
             <input type="submit" value="Submit"/>
         </form>
     </body>
