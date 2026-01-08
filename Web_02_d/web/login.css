@@ -66,8 +66,8 @@ input[type="submit"]{
 
 }
 div{
-    display: flex;             /* Sử dụng mô hình hộp linh hoạt */
-    justify-content: center;   /* Căn giữa theo chiều ngang trang */
+    display: flex;             
+    justify-content: center; 
     align-items: center;
     margin-top: 20px
 }
