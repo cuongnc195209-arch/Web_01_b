@@ -1,0 +1,79 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 21, 2026, 10:16:03 PM
+    Author     : Cuong
+*/
+
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 8, 2026, 11:33:45 AM
+    Author     : Cuong
+*/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    justify-content: center;
+    padding: 50px;
+    /*chèn hình*/
+    /* Đường dẫn đến hình ảnh */
+    background-image: url("img/3607424.jpg"); 
+
+    /* Giữ hình ảnh cố định, không bị trôi khi cuộn trang */
+    background-attachment: fixed;
+
+    /* Căn chỉnh hình ảnh luôn nằm chính giữa màn hình */
+    background-position: center;
+
+    /* Không cho hình ảnh lặp lại nếu ảnh nhỏ hơn màn hình */
+    background-repeat: no-repeat;
+
+    /* Quan trọng: Giúp ảnh phủ kín toàn bộ màn hình mà không bị méo */
+    background-size: cover;
+}
+
+body form{
+    background: white;
+    padding: 30px;
+    width: 90%;            
+    max-width: 500px;      
+    margin: 0 auto;        
+    border-radius: 12px;
+    line-height: 2;
+    text-align: center;
+}
+input {
+    margin-bottom: 10px; 
+    
+}
+input[type="submit"]{
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 5px;
+    transition: background 0.3s;
+    
+    
+}
+input[type="text"], input[type="password"]{
+    width: 60%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    
+}
+span {
+    color: red;
+}
